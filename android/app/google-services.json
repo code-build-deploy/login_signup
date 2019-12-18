@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "92220603282",
+    "firebase_url": "https://digilocker-39acb.firebaseio.com",
+    "project_id": "digilocker-39acb",
+    "storage_bucket": "digilocker-39acb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92220603282:android:8bde0df086b3747bed5f4b",
+        "android_client_info": {
+          "package_name": "com.example.digilocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92220603282-nvp7200sgevncn3pggon4i4vnqtruftc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8ypc2Yxrv6BfYPsTNm8nuZPsRZ4pbbB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92220603282-nvp7200sgevncn3pggon4i4vnqtruftc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
