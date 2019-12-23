@@ -1,7 +1,7 @@
+import 'package:digilocker/pages/choose_gender.dart';
 import 'package:digilocker/services/services/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:digilocker/pages/login_signup_page.dart';
-import 'package:digilocker/pages/home_page.dart';
 
 enum AuthStatus {
   NOT_DETERMINED,
@@ -77,7 +77,7 @@ class _RootPageState extends State<RootPage> {
         break;
       case AuthStatus.LOGGED_IN:
         if (_userId.length > 0 && _userId != null) {
-          return new HomePage(
+          return new chooseGender(
             userId: _userId,
             auth: widget.auth,
             logoutCallback: logoutCallback,

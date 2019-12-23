@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+
 class LoginPageBackground extends StatelessWidget {
   
   final screenHeight;
   const LoginPageBackground({Key key , @required this.screenHeight}):super (key:key);
   @override
   Widget build(BuildContext context) {
-    final themeData = Theme.of(context);
 
     return Column(
       children: <Widget>[
@@ -14,7 +14,7 @@ class LoginPageBackground extends StatelessWidget {
                 clipper: TopLeftClipper(),
                 child: Container(
                 height: screenHeight * 0.5,
-                color: Color(0xaad39897),
+                color: Color(0xff0f1b45),
                 ),
                 ),
                 ClipPath(
@@ -23,7 +23,7 @@ class LoginPageBackground extends StatelessWidget {
                   
                   height: screenHeight*0.5,
                   
-                  color: Color(0xaad39897),
+                  color: Color(0xff0f1b45),
                   ),
                 ),
       

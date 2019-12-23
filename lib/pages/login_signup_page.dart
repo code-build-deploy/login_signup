@@ -144,7 +144,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             children: <Widget>[
                Center(
                   child: Text("Hi!",style: TextStyle(
-                     color: Colors.black,
+                     color: Colors.white,
                      fontSize: 50,
                      letterSpacing: 2,
                      fontWeight: FontWeight.w800
@@ -228,7 +228,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
       child: new FlatButton(
           child: new Text(
               _isLoginForm ? 'Create an account' : 'Have an account? Sign in',
-              style: new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400)),
+              style: new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400,color: Colors.white)),
           onPressed: toggleFormMode),
     );
   }
@@ -243,7 +243,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             elevation: 5.0,
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(30.0)),
-            color: Color(0xaac76061),
+            color: Color(0xffe2a139),
             child: new Text(_isLoginForm ? 'Login' : 'Create account',
                 style: new TextStyle(fontSize: 20.0, color: Colors.white)),
             onPressed: validateAndSubmit,
