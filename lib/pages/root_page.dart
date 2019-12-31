@@ -1,4 +1,5 @@
 import 'package:digilocker/services/services/authentication.dart';
+import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:digilocker/pages/login_signup_page.dart';
 import 'package:digilocker/pages/home_page.dart';
@@ -21,6 +22,7 @@ class RootPage extends StatefulWidget {
 class _RootPageState extends State<RootPage> {
   AuthStatus authStatus = AuthStatus.NOT_DETERMINED;
   String _userId = "";
+  String email;
 
   @override
   void initState() {
@@ -29,6 +31,7 @@ class _RootPageState extends State<RootPage> {
       setState(() {
         if (user != null) {
           _userId = user?.uid;
+          email = user.email;
         }
         authStatus =
             user?.uid == null ? AuthStatus.NOT_LOGGED_IN : AuthStatus.LOGGED_IN;
@@ -81,6 +84,7 @@ class _RootPageState extends State<RootPage> {
             userId: _userId,
             auth: widget.auth,
             logoutCallback: logoutCallback,
+            email: email,
           );
         } else
           return buildWaitingScreen();
